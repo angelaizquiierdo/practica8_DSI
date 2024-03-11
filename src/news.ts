@@ -1,4 +1,8 @@
-// Definición de la clase News
+
+/**
+ * Clase que representa una noticia
+ * @member title Título de la noticia
+ */
 export class News {
-  constructor(public title: string, public content: string) {}
+  constructor(private title: string, private content: string) {}
 }

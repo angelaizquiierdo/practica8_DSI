@@ -1,6 +1,9 @@
  import { News } from './news.js';
 
-// Definición de la interfaz Observer
+/**
+ * Interfaz que define el comportamiento de un observador
+ * @member update Método para actualizar el observador cuando se publica una noticia
+ */
 export interface Observer {
-  update(news: News): void; // Método para actualizar el observador cuando se publica una noticia
+  update(news: News): void;
 }

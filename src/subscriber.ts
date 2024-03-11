@@ -1,11 +1,12 @@
 import  {Observer} from './observer.js';
 import { News } from './news.js';
 
-
-
-// Implementación de la clase ConcreteObserver
+/**
+ * Clase que representa a un suscriptor
+ * @member update Método que se ejecuta cuando se publica una noticia
+ */
 export class Subscriber implements Observer {
   update(news: News): void {
-      console.log("Noticia recibida:", news);
+    console.log("Noticia recibida:", news);
   }
 }
