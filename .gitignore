@@ -1,0 +1,7 @@
+node_modules
+dist
+.eslintignore
+.eslintrc.json
+.prettierrc.json
+.prettierignore
+.nyc_output
