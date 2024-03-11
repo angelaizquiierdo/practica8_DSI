@@ -1,9 +1,9 @@
 import "mocha";
 import { expect } from "chai";
 
-import { NewsChannel } from "../src/newschannel.ts";
-import { News } from "../src/news.ts";
-import { Subscriber } from "../src/subscriber.ts";
+import { NewsChannel } from "../src/newschannel.js";
+import { News } from "../src/news.js";
+import { Subscriber } from "../src/subscriber.js";
 
 
 describe('Observer Pattern', () => {
@@ -22,6 +22,6 @@ describe('Observer Pattern', () => {
         // Publicar una noticia
         const news = new News("Título de la noticia", "Contenido de la noticia");
         newsChannel.publish(news);
-        
+        expect(subscriber1.update(news)).to.equal(console.log("Noticia recibida:", news));
     });
 });
