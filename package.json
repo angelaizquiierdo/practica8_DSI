@@ -2,17 +2,25 @@
   "name": "practica8_dsi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "ejercicio-P8.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc-watch --onSuccess \"node dist/ejercicio-P8.js\"",
+    "doc": "typedoc",
+    "test": "mocha",
+    "coverage": "c8 npm test && c8 report --reporter=lcov"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.3.12",
+    "@types/lowdb": "^1.0.15",
     "@types/mocha": "^10.0.6",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "c8": "^9.1.0",
     "chai": "^4.4.1",
+    "coveralls": "^3.1.1",
     "eslint-config-prettier": "^9.1.0",
     "mocha": "^10.3.0",
     "prettier": "^3.2.5",
