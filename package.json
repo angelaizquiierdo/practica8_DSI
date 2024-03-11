@@ -2,9 +2,10 @@
   "name": "practica8_dsi",
   "version": "1.0.0",
   "description": "",
-  "main": "ejercicio-pe102.ts",
+  "main": "index.ts",
+  "type":"module",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node dist/ejercicio-pe102.js\"",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
     "doc": "typedoc",
     "test": "mocha",
     "coverage": "c8 npm test && c8 report --reporter=lcov"
