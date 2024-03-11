@@ -20,7 +20,7 @@ enum ButtonClickEventType {'NO_EVENT', 'LEFTCLICK', 'RIGHTCLICK', 'CENTERCLICK'}
  * Class Button that implements the Observable interface, i.e.,
  * Button objects can be observed
  */
-class Button implements Observable {
+export class Button implements Observable {
   private observers: Observer[] = [];
 
   private eventType: ButtonClickEventType = ButtonClickEventType.NO_EVENT;
@@ -78,7 +78,7 @@ class Button implements Observable {
  * Class ButtonObserver that implements the interface Observer, i.e.,
  * it is able to observe other objects
  */
-class ButtonObserver implements Observer {
+export class ButtonObserver implements Observer {
   constructor(private id: number, private name: string) {
   }
 
